@@ -2,23 +2,31 @@ body {
   margin: 0px;
 }
 
-header {
-  height: 75px;
+#header {
   width: 100%;
-  padding: 0px;
-  margin: 0px;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
 }
-header nav {
-  position: absolute;
-  left: 108px;
-  top: 4%;
+
+#profile {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
 }
-header nav ul {
-  list-style: none;
+#profile hr {
+  width: 100%;
+  margin: 0 auto;
+}
+#profile h1 {
+  width: 100%;
+  margin: 0 auto;
   color: #666666;
-  display: flex;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10%;
+  text-align: left;
+  font-weight: lighter;
+}
+#profile p {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: #666666;
+  text-align: left;
+  font-size: 18px;
 }/*# sourceMappingURL=top.css.map */

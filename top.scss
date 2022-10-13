@@ -1,4 +1,19 @@
 $fontcolor:#666666;
+@mixin title(){
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+@mixin h1(){
+    width: 100%;
+    margin: 0 auto;
+    color: $fontcolor;
+    text-align: left;
+    font-weight: lighter;
+
+}
+
 body {
     margin: 0px;
 }
@@ -10,20 +25,14 @@ body {
 
 #profile{
     // background-color: blue;
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 30px;
+    @include title;
     hr {
         width: 100%;
         margin: 0 auto;
     }
     // background-color: blue;
     h1 {
-        width: 100%;
-        margin: 0 auto;
-        color: $fontcolor;
-        text-align: left;
-        font-weight: lighter;
+        @include h1;
     }
     p {
         width: 100%;
@@ -35,5 +44,34 @@ body {
         // background-color: red;
 
         font-size: 18px;
+    }
+}
+
+#details {
+    @include title;
+    h1 {
+        @include h1;
+    }
+
+    ul {
+        padding: 0;
+        list-style: none;
+        li {
+            .timeline-contetnt {
+                border-left: 1px #666666 solid;
+                // background-color: blue;
+            }
+            p {
+                margin-left: 10px;
+            }
+        }
+    }
+
+}
+
+#skills {
+    @include title;
+    h1 {
+        @include h1;
     }
 }

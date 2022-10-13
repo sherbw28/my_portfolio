@@ -29,4 +29,40 @@ body {
   color: #666666;
   text-align: left;
   font-size: 18px;
+}
+
+#details {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#details h1 {
+  width: 100%;
+  margin: 0 auto;
+  color: #666666;
+  text-align: left;
+  font-weight: lighter;
+}
+#details ul {
+  padding: 0;
+  list-style: none;
+}
+#details ul li .timeline-contetnt {
+  border-left: 1px #666666 solid;
+}
+#details ul li p {
+  margin-left: 10px;
+}
+
+#skills {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#skills h1 {
+  width: 100%;
+  margin: 0 auto;
+  color: #666666;
+  text-align: left;
+  font-weight: lighter;
 }/*# sourceMappingURL=top.css.map */

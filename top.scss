@@ -150,4 +150,33 @@ body {
     h1 {
         @include h1;
     }
+
+    a {
+        text-decoration: none;
+    }
+
+    .icon-a:before {
+        color: black;
+    }
+
+    .icon-a:hover {
+        opacity: 0.5;
+        transition: all 1s;
+    }
+
+    .contact-method {
+        display: flex;
+        width: 70%;
+        // background-color: red;
+        margin: 0 auto;
+        margin-top: 30px;
+        justify-content: space-between;
+    }
+}
+
+#footer {
+    // background-color: red;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 20px;
 }

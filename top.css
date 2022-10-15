@@ -155,4 +155,27 @@ body {
   color: #666666;
   text-align: left;
   font-weight: lighter;
+}
+#contact a {
+  text-decoration: none;
+}
+#contact .icon-a:before {
+  color: black;
+}
+#contact .icon-a:hover {
+  opacity: 0.5;
+  transition: all 1s;
+}
+#contact .contact-method {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+#footer {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 20px;
 }/*# sourceMappingURL=top.css.map */

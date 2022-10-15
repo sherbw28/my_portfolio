@@ -52,25 +52,101 @@ body {
     h1 {
         @include h1;
     }
-
+    
     ul {
         padding: 0;
         list-style: none;
+        display: flex;
+        flex-direction: column;
         li {
+            position: relative;
             .timeline-contetnt {
-                border-left: 1px #666666 solid;
+                border-left: 1px rgba(102,102,102,0.5) solid;
                 // background-color: blue;
+                z-index: 1;
+                height: 100px;
+                .timeline-date {
+                    font-size: 13px;
+                }
             }
+            
+            .timeline-contetnt:before{
+                content: '\2022';
+                font-size: 30px;
+                position: absolute;
+                left: -6px;
+                top: -29%;
+                color: #666666;
+                opacity: 1;
+                z-index: 2;
+            }
+            
             p {
                 margin-left: 10px;
             }
         }
     }
-
+    
 }
 
-#skills {
+#skill-set {
     @include title;
+    h1 {
+        @include h1;
+    }
+    
+    #skills {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 100%;
+        .skill {
+            margin-right: 10%;
+            p {
+                text-align: center;
+                .star {
+                    position: relative;
+                    z-index: 0;
+                    display: inline-block;
+                    white-space: nowrap;
+                    color: #CCCCCC;
+                    font-size: 20px;
+                }
+                
+                .star:before,.star:after{
+                    content: "☆☆☆☆☆";
+                }
+                
+                .star:after{
+                    position: absolute;
+                    z-index: 1;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    color: #ffcf32; 
+                }
+                
+                .star[rate="2"]:after{width: 40%;}
+                .star[rate="1.5"]:after{width: 30%;}
+                .star[rate="1"]:after{width: 22%;}
+            }
+        }
+    }
+}
+
+#works {
+    @include title;
+    width: 100%;
+    // background-color: red;
+    h1 {
+        @include h1;
+    }
+}
+
+#contact {
+    @include title;
+    width: 100%;
     h1 {
         @include h1;
     }

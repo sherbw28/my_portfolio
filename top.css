@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0px;
 }
@@ -46,20 +47,109 @@ body {
 #details ul {
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+#details ul li {
+  position: relative;
 }
 #details ul li .timeline-contetnt {
-  border-left: 1px #666666 solid;
+  border-left: 1px rgba(102, 102, 102, 0.5) solid;
+  z-index: 1;
+  height: 100px;
+}
+#details ul li .timeline-contetnt .timeline-date {
+  font-size: 13px;
+}
+#details ul li .timeline-contetnt:before {
+  content: "•";
+  font-size: 30px;
+  position: absolute;
+  left: -6px;
+  top: -29%;
+  color: #666666;
+  opacity: 1;
+  z-index: 2;
 }
 #details ul li p {
   margin-left: 10px;
 }
 
-#skills {
+#skill-set {
   width: 80%;
   margin: 0 auto;
   margin-top: 30px;
 }
-#skills h1 {
+#skill-set h1 {
+  width: 100%;
+  margin: 0 auto;
+  color: #666666;
+  text-align: left;
+  font-weight: lighter;
+}
+#skill-set #skills {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+}
+#skill-set #skills .skill {
+  margin-right: 10%;
+}
+#skill-set #skills .skill p {
+  text-align: center;
+}
+#skill-set #skills .skill p .star {
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  white-space: nowrap;
+  color: #CCCCCC;
+  font-size: 20px;
+}
+#skill-set #skills .skill p .star:before, #skill-set #skills .skill p .star:after {
+  content: "☆☆☆☆☆";
+}
+#skill-set #skills .skill p .star:after {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #ffcf32;
+}
+#skill-set #skills .skill p .star[rate="2"]:after {
+  width: 40%;
+}
+#skill-set #skills .skill p .star[rate="1.5"]:after {
+  width: 30%;
+}
+#skill-set #skills .skill p .star[rate="1"]:after {
+  width: 22%;
+}
+
+#works {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+}
+#works h1 {
+  width: 100%;
+  margin: 0 auto;
+  color: #666666;
+  text-align: left;
+  font-weight: lighter;
+}
+
+#contact {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 100%;
+}
+#contact h1 {
   width: 100%;
   margin: 0 auto;
   color: #666666;

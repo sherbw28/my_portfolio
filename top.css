@@ -32,6 +32,19 @@ body {
   font-size: 18px;
 }
 
+#certification {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+#certification h1 {
+  width: 100%;
+  margin: 0 auto;
+  color: #666666;
+  text-align: left;
+  font-weight: lighter;
+}
+
 #details {
   width: 80%;
   margin: 0 auto;
@@ -141,6 +154,35 @@ body {
   color: #666666;
   text-align: left;
   font-weight: lighter;
+}
+#works #work-detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#works #work-detail .work {
+  width: 350px;
+  height: 300px;
+  background-color: #EEEEEE;
+  margin: 0 auto;
+  margin-top: 30px;
+  text-align: center;
+  align-items: center;
+  box-shadow: 5px 5px 5px #666666;
+}
+#works #work-detail .work p {
+  margin-top: 10%;
+  font-size: 20px;
+  font-weight: bold;
+}
+#works #work-detail .work hr {
+  width: 80%;
+  margin: 0 auto;
+}
+#works #work-detail .work img {
+  width: 200px;
+  width: 250px;
+  margin-top: 10%;
 }
 
 #contact {

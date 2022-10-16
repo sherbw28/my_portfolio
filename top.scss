@@ -34,6 +34,13 @@ body {
     h1 {
         @include h1;
     }
+
+    // ul {
+    //     display: inline;
+    //     list-style: none;
+    //     color: $fontcolor;
+    // }
+
     p {
         width: 100%;
         // background-color: red;
@@ -44,6 +51,13 @@ body {
         // background-color: red;
 
         font-size: 18px;
+    }
+}
+
+#certification {
+    @include title;
+    h1 {
+        @include h1;
     }
 }
 
@@ -76,7 +90,7 @@ body {
                 position: absolute;
                 left: -6px;
                 top: -29%;
-                color: #666666;
+                color: $fontcolor;
                 opacity: 1;
                 z-index: 2;
             }
@@ -142,6 +156,40 @@ body {
     h1 {
         @include h1;
     }
+
+    #work-detail {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .work {
+            width: 350px;
+            height: 300px;
+            background-color: #EEEEEE;
+            margin: 0 auto;
+            margin-top: 30px;
+            text-align: center;
+            align-items: center;
+            box-shadow: 5px 5px 5px $fontcolor;
+            // color: $fontcolor;
+            p {
+                // display: inline;;
+                margin-top: 10%;
+                font-size: 20px;
+                font-weight: bold;
+            }
+
+            hr {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            img {
+                width: 200px;
+                width: 250px;
+                margin-top: 10%;
+            }
+        }
+    }
 }
 
 #contact {
@@ -180,3 +228,9 @@ body {
     margin-top: 50px;
     font-size: 20px;
 }
+
+// @media screen and (max-width: 480px) {
+//     .work {
+//         width: 100%;
+//     }
+// }

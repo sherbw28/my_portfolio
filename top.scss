@@ -14,6 +14,20 @@ $fontcolor:#666666;
 
 }
 
+@mixin ul() {
+    display: inline;
+    list-style: none;
+    color: $fontcolor;
+    font-size: 16px;
+    padding: 0;
+}
+
+@mixin  about-title() {
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 17px;
+}
+
 body {
     margin: 0px;
 }
@@ -35,12 +49,65 @@ body {
         @include h1;
     }
 
+    #name {
+        @include ul;
+        span {
+            margin-left: 4.4rem
+        }
+        .about-title {
+            @include about-title;
+        }
+    }
 
-    // ul {
-    //     display: inline;
-    //     list-style: none;
-    //     color: $fontcolor;
-    // }
+    #from {
+        @include ul;
+        span {
+            margin-left: 0.3rem
+        }
+        .about-title {
+            @include about-title;
+        }
+    }
+
+    #school {
+        @include ul;
+        span {
+            margin-left: 3.9rem;
+        }
+        li:nth-child(n+2)  {
+            margin-left: 8.2rem;
+        } 
+        .about-title {
+            @include about-title;
+        }
+    }
+
+    #hobbies {
+        @include ul;
+        span {
+            margin-left: 3.2rem;
+        }
+        li:nth-child(n+2){
+            margin-left: 8.2rem;
+        }
+        .about-title {
+            @include about-title;
+        }
+    }
+    
+    #certification {
+        @include ul;
+        span {
+            margin-left: 1.2rem;
+        }
+        .about-title {
+            @include about-title;
+        }
+        li:nth-child(n+2){
+            margin-left: 8.5rem;
+        }
+    }
+
 
     p {
         width: 100%;
@@ -49,13 +116,11 @@ body {
         margin-top: 20px;
         color: $fontcolor;
         text-align: left;
-        // background-color: red;
-
         font-size: 18px;
     }
 
-    span {
-        background-color: red
+    .column-list {
+        display: inline;
     }
 }
 

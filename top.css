@@ -23,6 +23,90 @@ body {
   text-align: left;
   font-weight: lighter;
 }
+#profile #name {
+  display: inline;
+  list-style: none;
+  color: #666666;
+  font-size: 16px;
+  padding: 0;
+}
+#profile #name span {
+  margin-left: 4.4rem;
+}
+#profile #name .about-title {
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+#profile #from {
+  display: inline;
+  list-style: none;
+  color: #666666;
+  font-size: 16px;
+  padding: 0;
+}
+#profile #from span {
+  margin-left: 0.3rem;
+}
+#profile #from .about-title {
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+#profile #school {
+  display: inline;
+  list-style: none;
+  color: #666666;
+  font-size: 16px;
+  padding: 0;
+}
+#profile #school span {
+  margin-left: 3.9rem;
+}
+#profile #school li:nth-child(n+2) {
+  margin-left: 8.2rem;
+}
+#profile #school .about-title {
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+#profile #hobbies {
+  display: inline;
+  list-style: none;
+  color: #666666;
+  font-size: 16px;
+  padding: 0;
+}
+#profile #hobbies span {
+  margin-left: 3.2rem;
+}
+#profile #hobbies li:nth-child(n+2) {
+  margin-left: 8.2rem;
+}
+#profile #hobbies .about-title {
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+#profile #certification {
+  display: inline;
+  list-style: none;
+  color: #666666;
+  font-size: 16px;
+  padding: 0;
+}
+#profile #certification span {
+  margin-left: 1.2rem;
+}
+#profile #certification .about-title {
+  margin-left: 0;
+  font-weight: bold;
+  font-size: 17px;
+}
+#profile #certification li:nth-child(n+2) {
+  margin-left: 8.5rem;
+}
 #profile p {
   width: 100%;
   margin: 0 auto;
@@ -31,8 +115,8 @@ body {
   text-align: left;
   font-size: 18px;
 }
-#profile span {
-  background-color: red;
+#profile .column-list {
+  display: inline;
 }
 
 #certification {

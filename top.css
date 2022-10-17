@@ -31,6 +31,9 @@ body {
   text-align: left;
   font-size: 18px;
 }
+#profile span {
+  background-color: red;
+}
 
 #certification {
   width: 80%;
@@ -103,6 +106,8 @@ body {
 #skill-set #skills {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin: 0;
   width: 100%;
 }

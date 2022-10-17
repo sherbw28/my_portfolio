@@ -97,7 +97,7 @@ body {
   padding: 0;
 }
 #profile #certification span {
-  margin-left: 1.2rem;
+  margin-left: 1.05rem;
 }
 #profile #certification .about-title {
   margin-left: 0;
@@ -105,7 +105,7 @@ body {
   font-size: 17px;
 }
 #profile #certification li:nth-child(n+2) {
-  margin-left: 8.5rem;
+  margin-left: 8.21rem;
 }
 #profile p {
   width: 100%;

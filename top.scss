@@ -98,13 +98,13 @@ body {
     #certification {
         @include ul;
         span {
-            margin-left: 1.2rem;
+            margin-left: 1.05rem;
         }
         .about-title {
             @include about-title;
         }
         li:nth-child(n+2){
-            margin-left: 8.5rem;
+            margin-left: 8.21rem;
         }
     }
 

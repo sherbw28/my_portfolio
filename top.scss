@@ -1,4 +1,6 @@
 $fontcolor:#666666;
+$height:1000%;
+@use "mixin" as *;
 @mixin title(){
     width: 80%;
     margin: 0 auto;
@@ -12,6 +14,90 @@ $fontcolor:#666666;
     text-align: left;
     font-weight: lighter;
 
+}
+
+
+@keyframes kf-cover-slide {
+    0% {
+        content: "";
+        line-height: $height;
+        font-weight: bold;
+        right: 0;
+        left: 100%;
+    }
+    20% {
+        line-height: $height;
+        content: "welcome";
+        font-weight: bold;
+        color: $fontcolor;
+    }
+    30% {
+        line-height: $height;
+        content: "welcome to";
+        font-weight: bold;
+        color: $fontcolor;
+    }
+    40% {
+        line-height: $height;
+        content: "welcome to my portfolio";
+        font-weight: bold;
+        color: $fontcolor;
+    }
+
+    50% {
+        line-height: $height;
+        content: "welcome to my portfolio";
+        font-weight: bold;
+        color: $fontcolor;
+        right: 0;
+        left: 0;
+    }
+    60% {
+        line-height: $height;
+        content: "welcome to my portfolio";
+        font-weight: bold;
+        color: $fontcolor;
+    }
+    70% {
+        line-height: $height;
+        content: "portfolio";
+        font-weight: bold;
+        color: $fontcolor;
+    }
+    80% {
+        line-height: $height;
+        content: "olio";
+        font-weight: bold;
+        color: $fontcolor;
+    }
+    90% {
+        line-height: $height;
+        content: "";
+        font-weight: bold;
+        color: $fontcolor;
+    }
+    100% {
+        line-height: $height;
+        font-weight: bold;
+        right: 100%;
+        left: 0;
+    }
+}
+
+@keyframes kf-img-show {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    50.1% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 @mixin ul() {
@@ -35,6 +121,41 @@ body {
 #header {
     // position: fixed;
     width: 100%;
+}
+
+.cover-slide {
+    position: relative;
+    overflow: hidden;
+    font-size: 22px;
+    &::after {
+        content: '';
+        text-align: center;
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        // background-color: #eaebe6;
+        background-color: #ffffff;
+        @include animation($name: kf-cover-slide);
+    }
+    &.inview {
+        &::after {
+            @include animation($name: kf-cover-slide, $duration: 3.5s, $timing-function: ease-in-out);
+        }
+    }
+}
+
+.img-zoom {
+    opacity: 0;
+    vertical-align: bottom;
+
+    .in-view & {
+        opacity: 1;
+        transition: transform 0.3s ease;
+        @include animation($name: kf-img-show, $duration: 1.6s, $timing-function: ease-in-out, $fill-mode: none);
+    }
 }
 
 #profile{
